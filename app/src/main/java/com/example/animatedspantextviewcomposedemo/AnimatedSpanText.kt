@@ -68,7 +68,7 @@ fun AnimatedSpanText(
         label = "offsetAnimation"
     )
 
-    // This is in pixels, Offset works in pixels.
+    // This is in pixels! Offset works in pixels.
     val width = 400f
 
     // Calculate the gradient's start and end offsets for horizontal movement

@@ -12,6 +12,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -52,6 +53,7 @@ private fun FourExamples() {
         )
         AnimatedSpanText(
             "Hello World!",
+            animationDuration = 2000,
             fontSize = 48.sp
         )
         Text(
@@ -61,7 +63,11 @@ private fun FourExamples() {
         )
         AnimatedSpanText(
             "Hello World!",
-            fontSize = 48.sp
+            gradientColors = listOf(
+                Color.Magenta,
+                Color.Red,
+            ),
+            fontSize = 48.sp,
         )
         Text(
             "ROYGBIV Shorter Width Fast Speed",
@@ -70,6 +76,16 @@ private fun FourExamples() {
         )
         AnimatedSpanText(
             "Hello World!",
+            gradientColors = listOf(
+                Color(TColor.Red500),
+                Color(TColor.Orange500),
+                Color(TColor.Yellow500),
+                Color(TColor.Green500),
+                Color(TColor.Blue500),
+                Color(TColor.Indigo500),
+                Color(TColor.Purple500),
+            ),
+            animationDuration = 2000,
             fontSize = 48.sp
         )
     }
