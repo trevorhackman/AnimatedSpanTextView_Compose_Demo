@@ -85,6 +85,7 @@ private fun FourExamples() {
                 Color(TColor.Indigo500),
                 Color(TColor.Purple500),
             ),
+            gradientWidth = AnimatedSpanText.GradientWidth.TextSizeMultiple(0.3f),
             animationDuration = 2000,
             fontSize = 48.sp
         )
